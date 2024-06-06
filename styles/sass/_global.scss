@@ -1,0 +1,44 @@
+
+
+#page{
+    background-color: white;
+    position: relative;
+    height: 100vh;
+}
+
+.body_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+main{
+    background-color: brown;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background-color: burlywood;
+    width: 100%;
+    // .btn-navbar-open{
+    //     position: absolute;
+    //     top: 20px;
+    //     right: 20px;
+    // }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}

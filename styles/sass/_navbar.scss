@@ -1,0 +1,98 @@
+
+
+nav{
+    @include Larges_max{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    button{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        @include Larges_max{
+            padding-top: 80px;
+        }
+        ul{
+            display: flex;
+            // gap: 20px;
+            width: 100%;
+            @include Larges_max{
+                flex-direction: column;
+                gap: 0;
+            }
+            li{
+                width: 100%;
+                display: flex;
+                a{
+                    width: 100%;
+                    padding: 5px 10px;
+                    text-align: center;
+                    @include Larges_max{
+                        text-align: left;
+                        padding: 15px 15px 15px 10vw;
+                    }
+                }
+            }
+            li a:hover{
+                background-color: rgb(255, 255, 255, 0.8);
+                color: black;
+            }
+        }
+    }
+}
+
+
+.nav_open{
+    @include Larges_max{
+        background-color: rgb(0, 0, 0, 0.8);
+        left: 0;
+        color: white;
+    }
+}
+.nav_close{
+    @include Larges_max{
+        background-color: transparent;
+        transition: 300ms;
+        left: -100%;
+        .btn-navbar-close{
+            background-color: transparent;
+            color: transparent;
+        }
+    }
+}
+
+.btn-navbar-open, 
+.btn-navbar-close{
+    background-color: green;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: none;
+    @include Larges_max{
+        display: block;
+    }
+}
+.btn-navbar-open{
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn-navbar-close{
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
